@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.Web", "ASP\ASP.Web.csproj", "{12F542EA-8535-4B3B-8BA6-0AD1FB837076}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.Tests", "ASP.Tests\ASP.Tests.csproj", "{769F5E47-B2B8-4810-816B-1DADFF99B8BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F542EA-8535-4B3B-8BA6-0AD1FB837076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F542EA-8535-4B3B-8BA6-0AD1FB837076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F542EA-8535-4B3B-8BA6-0AD1FB837076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F542EA-8535-4B3B-8BA6-0AD1FB837076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769F5E47-B2B8-4810-816B-1DADFF99B8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769F5E47-B2B8-4810-816B-1DADFF99B8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769F5E47-B2B8-4810-816B-1DADFF99B8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769F5E47-B2B8-4810-816B-1DADFF99B8BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
