@@ -1,4 +1,4 @@
-ASP.WebApp/obj
+
 ASP.Tests
 packages
 .vs
@@ -10,5 +10,6 @@ bin
 obj
 packages
 
- ASP.WebApp/App_Data/
+/ASP.WebApp/bin
+/ASP.WebApp/obj
 /ASP.WebApp/App_Data
