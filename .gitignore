@@ -9,3 +9,6 @@ _ReSharper.*
 bin
 obj
 packages
+
+ ASP.WebApp/App_Data/
+/ASP.WebApp/App_Data

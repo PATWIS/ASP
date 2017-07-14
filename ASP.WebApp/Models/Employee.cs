@@ -8,7 +8,9 @@ namespace ASP.Models
 {
     public class Employee
     {
-        public int Id { get; set; }
+        public int EmployeeId { get; set; }
+
+        public int CompanyId { get; set; }
 
         [Required(ErrorMessage = "Please set a name")]
         [StringLength(150)]

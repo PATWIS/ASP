@@ -9,6 +9,10 @@ namespace ASP.DAL
 {
     public class AppContext : DbContext
     {
+        public AppContext() : base("AppContext")
+        {
+
+        }
         public DbSet<Accountant> Accountant { get; set; }
         public DbSet<Company> Company { get; set; }
         public DbSet<Employee> Employee { get; set; }
