@@ -5,19 +5,20 @@ using System.Linq;
 using System.Web;
 using ASP.Models;
 using System.Data.Entity.Migrations;
+using ASP.Migrations;
 
 namespace ASP.DAL
 {
-    public class AppInitializer : DropCreateDatabaseAlways<AppContext>
+    public class AppInitializer : MigrateDatabaseToLatestVersion<AppContext, Configuration>
     {
 
-        protected override void Seed(AppContext context)
-        {
-            SeedAppData(context);
-            base.Seed(context);
-        }
+        //protected override void Seed(AppContext context)
+        //{
+        //    SeedAppData(context);
+        //    base.Seed(context);
+        //}
 
-        private void SeedAppData(AppContext context)
+        public static void SeedAppData(AppContext context)
         {
 
             var companies = new List<Company>

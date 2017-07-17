@@ -4,8 +4,9 @@ namespace ASP.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using ASP.DAL;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ASP.DAL.AppContext>
+    public sealed class Configuration : DbMigrationsConfiguration<ASP.DAL.AppContext>
     {
         public Configuration()
         {
@@ -15,6 +16,10 @@ namespace ASP.Migrations
 
         protected override void Seed(ASP.DAL.AppContext context)
         {
+
+            AppInitializer.SeedAppData(context);
+            
+            
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
