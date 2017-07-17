@@ -15,10 +15,12 @@ namespace ASP.Controllers
         public ActionResult Index()
         {
 
-            Employee newEmployee = new Employee { Name = "testemployee", MedicalExamDate = DateTime.Now };
+            //Employee newEmployee = new Employee { Name = "testemployee", MedicalExamDate = DateTime.Now };
 
-            db.Employee.Add(newEmployee);
-            db.SaveChanges();
+            //db.Employees.Add(newEmployee);
+            //db.SaveChanges();
+
+            var employeesList = db.Employees.ToList();
 
             return View();
         }

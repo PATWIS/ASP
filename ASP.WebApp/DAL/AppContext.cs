@@ -13,8 +13,14 @@ namespace ASP.DAL
         {
 
         }
-        public DbSet<Accountant> Accountant { get; set; }
-        public DbSet<Company> Company { get; set; }
-        public DbSet<Employee> Employee { get; set; }
+
+        static AppContext()
+        {
+            Database.SetInitializer<AppContext>(new AppInitializer());
+        }
+
+        public DbSet<Accountant> Accountants { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
