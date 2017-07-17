@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using ASP.Models;
+using System.Data.Entity.Migrations;
 
 namespace ASP.DAL
 {
@@ -24,7 +25,7 @@ namespace ASP.DAL
                 new Company() {CompanyId = 1, Name="TestCompany1" }
             };
 
-            companies.ForEach(c => context.Companies.Add(c));
+            companies.ForEach(c => context.Companies.AddOrUpdate(c));
             context.SaveChanges();
 
 
@@ -34,7 +35,7 @@ namespace ASP.DAL
                 new Employee() {EmployeeId = 1, Name="TestUser1", MedicalExamDate = DateTime.Now, CompanyId = 1}
             };
 
-            employees.ForEach(e => context.Employees.Add(e));
+            employees.ForEach(e => context.Employees.AddOrUpdate(e));
             context.SaveChanges();
         }
     }
